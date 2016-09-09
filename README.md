@@ -6,7 +6,9 @@
 
 ## Description
 
-_This is a command line application for an all-inclusive party planning service. The user will be prompted with several questions about a party they are throwing. Based on the information they provide, the program will calculate an estimated cost for party planning services. It can be found on GitHub Pages [here](https://sheenanick.github.io/java-party-planning)_
+_This is a command line application for an all-inclusive party planning service. The user will be prompted with several questions about a party they are throwing. Based on the information they provide, the program will calculate an estimated cost for party planning services.
+
+It can be found on GitHub Pages [here](https://sheenanick.github.io/java-party-planning)_
 
 ## Specifications
 
@@ -18,10 +20,6 @@ _This is a command line application for an all-inclusive party planning service.
 
 * _Clone this repository_
 * _Open index.html with your web browser of choice._
-
-## GitHub Pages link
-
-_[here](https://sheenanick.github.io/java-party-planning)_
 
 ## Support and contact details
 
