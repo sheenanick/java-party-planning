@@ -64,7 +64,6 @@ public class App {
           while(choiceChecker) {
             String choice = console.readLine().toLowerCase();
             if(choice.equals("new party")){
-              programRunning = true;
               choiceChecker = false;
             } else if(choice.equals("see cost")){
               programRunning = false;
