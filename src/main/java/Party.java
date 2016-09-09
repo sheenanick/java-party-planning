@@ -16,31 +16,31 @@ class Party {
 
   public int calculateCost() {
     if (mFood.equals("full course")) {
-      int mFoodCost = 75;
+      mFoodCost = 75;
     } else if (mFood.equals("light meal")) {
-      int mFoodCost = 15;
+      mFoodCost = 15;
     } else {
-      int mFoodCost = 5;
+      mFoodCost = 5;
     }
 
     if (mBeverages.equals("full bar")) {
-      int mBeverageCost = 50;
+      mBeverageCost = 50;
     } else if (mBeverages.equals("light refreshments")) {
-      int mBeverageCost = 5;
+      mBeverageCost = 5;
     } else {
-      int mBeverageCost = 2;
+      mBeverageCost = 2;
     }
 
     if (mEntertainment.equals("live band")) {
-      int mEntertainmentCost = 2000;
+      mEntertainmentCost = 2000;
     } else if (mEntertainment.equals("DJ")) {
-      int mEntertainmentCost = 1000;
+      mEntertainmentCost = 1000;
     } else {
-      int mEntertainmentCost = 0;
+      mEntertainmentCost = 5;
     }
 
     int partyCost = ((mFoodCost + mBeverageCost) * mNumOfGuests + mEntertainmentCost);
-    return 0;
+    return partyCost;
   }
 
 }
