@@ -4,7 +4,7 @@ public class App {
   public static void main(String[] args) {
     Console console = System.console();
 
-    System.out.println("Please enter the number of guests you are expecting at your party");
+    System.out.println("Welcome to PDX Party Planning. Answer a few easy questions for a free quote! Please enter the number of guests you are expecting at your party");
     int guests = Integer.parseInt(console.readLine());
     System.out.println("Please choose one of the following for your food service: full course, light meal, snacks");
     String food = console.readLine();
@@ -16,6 +16,6 @@ public class App {
     Party newParty = new Party(guests, food, beverages, entertainment);
     int cost = newParty.calculateCost();
 
-    System.out.println("The total cost of your party is $" + cost + ".");
+    System.out.println("The estimated total cost of your party is $" + cost + ".");
   }
 }

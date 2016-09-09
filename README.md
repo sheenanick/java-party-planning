@@ -6,19 +6,13 @@
 
 ## Description
 
-_This is a ._
+_This is a command line application for an all-inclusive party planning service. The user will be prompted with several questions about a party they are throwing. Based on the information they provide, the program will calculate an estimated cost for party planning services. It can be found on GitHub Pages [here](https://sheenanick.github.io/java-party-planning)_
 
 ## Specifications
 
-* _It can_
-  * _Example Input:_
-  * _Example Output:_
-* _It can_
-  * _Example Input:_
-  * _Example Output:_
-* _It can_
-  * _Example Input:_
-  * _Example Output:_
+* _It can calculate the estimated cost for a party._
+  * _Example Input: 10 guests, full course, full bar, live band_
+  * _Example Output: $3250_
 
 ## Setup/Installation Requirements
 
