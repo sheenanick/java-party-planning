@@ -14,4 +14,11 @@ public class PartyTest {
     Party testParty = new Party(10, "full course", "full bar", "live band");
     assertEquals(3250, testParty.calculateCost());
   }
+
+  @Test
+  public void newParty_calculatesCostWithUppercaseInput_3250() {
+    Party testParty = new Party(10, "FULL COURSE", "FULL BAR", "LIVE BAND");
+    assertEquals(3250, testParty.calculateCost());
+  }
+
 }

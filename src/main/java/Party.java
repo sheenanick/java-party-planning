@@ -9,9 +9,9 @@ class Party {
 
   public Party(int guests, String food, String beverages, String entertainment) {
     mNumOfGuests = guests;
-    mFood = food;
-    mBeverages = beverages;
-    mEntertainment = entertainment;
+    mFood = food.toLowerCase();
+    mBeverages = beverages.toLowerCase();
+    mEntertainment = entertainment.toLowerCase();
   }
 
   public int calculateCost() {
@@ -33,7 +33,7 @@ class Party {
 
     if (mEntertainment.equals("live band")) {
       mEntertainmentCost = 2000;
-    } else if (mEntertainment.equals("DJ")) {
+    } else if (mEntertainment.equals("dj")) {
       mEntertainmentCost = 1000;
     } else {
       mEntertainmentCost = 5;
