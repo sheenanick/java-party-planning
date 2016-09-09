@@ -6,6 +6,7 @@ class Party {
   private int mFoodCost;
   private int mBeverageCost;
   private int mEntertainmentCost;
+  private int mTotalCost;
 
   public Party(int guests, String food, String beverages, String entertainment) {
     mNumOfGuests = guests;
@@ -39,8 +40,7 @@ class Party {
       mEntertainmentCost = 5;
     }
 
-    int partyCost = ((mFoodCost + mBeverageCost) * mNumOfGuests + mEntertainmentCost);
-    return partyCost;
+    mTotalCost = ((mFoodCost + mBeverageCost) * mNumOfGuests + mEntertainmentCost);
+    return mTotalCost;
   }
-
 }
