@@ -14,7 +14,7 @@ public class App {
 
     while(mainProgramRunning){
       String answer = console.readLine().toUpperCase();
-      if (answer.equals("N") || answer.equals("NO")){
+      if (answer.equals("N")){
         System.out.println("Please enter the number of guests you are expecting at your party");
         guests = Integer.parseInt(console.readLine());
         System.out.println("Please choose one of the following for your food service: full course, light meal, snacks");
@@ -48,7 +48,7 @@ public class App {
           }
         }
         mainProgramRunning = false;
-      } else if(answer.equals("Y") || answer.equals("YES")) {
+      } else if(answer.equals("Y")) {
         boolean programRunning = true;
         while(programRunning) {
           Random randomGenerator = new Random();
@@ -59,7 +59,7 @@ public class App {
           food = foodArray[randomGenerator.nextInt(3)];
           beverages = beverageArray[randomGenerator.nextInt(3)];
           entertainment = entertainmentArray[randomGenerator.nextInt(3)];
-          System.out.println("These are the details for your party: Number of guests: " + guests + ", Food Service: " + food + ", Beverage Service: " + beverages + ", Entertainment: " + entertainment + ". Would you like to create a new party or see the cost estimate for this party? Enter one of the following options: New Party or See Cost");
+          System.out.println(String.format("These are the details for your party: Number of guests: %d, Food Service: %s, Beverage Service: %s, Entertainment: %s. Would you like to create a new party or see the cost estimate for this party? Enter one of the following options: New Party or See Cost", guests, food, beverages, entertainment));
           boolean choiceChecker = true;
           while(choiceChecker) {
             String choice = console.readLine().toLowerCase();
@@ -80,6 +80,6 @@ public class App {
     }
     Party party = new Party(guests, food, beverages, entertainment);
     int cost = party.calculateCost();
-    System.out.println("The estimated total cost for your party is $" + cost + ".");
+    System.out.println(String.format("The estimated total cost for your party is $%d.", cost));
   }
 }
